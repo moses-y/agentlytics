@@ -1,7 +1,7 @@
 {
   "name": "agentlytics",
   "version": "0.2.12",
-  "description": "Comprehensive analytics dashboard for AI coding agents — Cursor, Windsurf, Claude Code, VS Code Copilot, Zed, Antigravity, OpenCode, Command Code",
+  "description": "Comprehensive analytics dashboard for AI coding agents \u2014 Cursor, Windsurf, Claude Code, VS Code Copilot, Zed, Antigravity, OpenCode, Command Code",
   "main": "index.js",
   "bin": {
     "agentlytics": "./index.js"
@@ -29,8 +29,8 @@
   ],
   "scripts": {
     "start": "node index.js",
-    "build": "cd ui && npm install && npm run build",
-    "dev": "cd ui && npm run dev"
+    "build": "cd ui && pnpm install && pnpm run build",
+    "dev": "cd ui && pnpm run dev"
   },
   "keywords": [
     "cursor",
@@ -62,5 +62,6 @@
     "express": "^4.22.1",
     "log-update": "^4.0.0",
     "open": "^8.4.2"
-  }
+  },
+  "packageManager": "pnpm@10.33.2"
 }
