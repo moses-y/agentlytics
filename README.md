@@ -39,11 +39,11 @@ You switch between Cursor, Windsurf, Claude Code, VS Code Copilot, and more — 
 **One command. Full picture. All local.**
 
 ```bash
-npx agentlytics
+pnpm dlx agentlytics
 # or
 pnpm dlx agentlytics
 # or
-yarn dlx agentlytics
+pnpm dlx agentlytics
 # or
 bunx agentlytics
 ```
@@ -96,7 +96,7 @@ deno task scan:json   # JSON output
 ### Node.js
 
 ```
-$ npx agentlytics
+$ pnpm dlx agentlytics
 
 (● ●) [● ●] Agentlytics
 {● ●} <● ●> Unified analytics for your AI coding agents
@@ -119,7 +119,7 @@ Looking for AI coding agents...
 To only build the cache without starting the server:
 
 ```bash
-npx agentlytics --collect
+pnpm dlx agentlytics --collect
 # or: pnpm dlx agentlytics --collect
 ```
 
@@ -164,14 +164,14 @@ Relay enables multi-user context sharing across a team. One person starts a rela
 ### Start a relay
 
 ```bash
-npx agentlytics --relay
+pnpm dlx agentlytics --relay
 # or: pnpm dlx agentlytics --relay
 ```
 
 Optionally protect with a password:
 
 ```bash
-RELAY_PASSWORD=secret npx agentlytics --relay
+RELAY_PASSWORD=secret pnpm dlx agentlytics --relay
 ```
 
 This starts a relay server on port `4638` and prints the join command and MCP endpoint:
@@ -181,7 +181,7 @@ This starts a relay server on port `4638` and prints the join command and MCP en
 
   Share this command with your team:
     cd /path/to/project
-    npx agentlytics --join 192.168.1.16:4638
+    pnpm dlx agentlytics --join 192.168.1.16:4638
 
   MCP server endpoint (add to your AI client):
     http://192.168.1.16:4638/mcp
@@ -191,14 +191,14 @@ This starts a relay server on port `4638` and prints the join command and MCP en
 
 ```bash
 cd /path/to/your-project
-npx agentlytics --join <host:port>
+pnpm dlx agentlytics --join <host:port>
 # or: pnpm dlx agentlytics --join <host:port>
 ```
 
 If the relay is password-protected:
 
 ```bash
-RELAY_PASSWORD=secret npx agentlytics --join <host:port>
+RELAY_PASSWORD=secret pnpm dlx agentlytics --join <host:port>
 ```
 
 Username is auto-detected from `git config user.email`. You can override it with `--username <name>`.

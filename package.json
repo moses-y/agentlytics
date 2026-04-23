@@ -62,5 +62,6 @@
     "express": "^4.22.1",
     "log-update": "^4.0.0",
     "open": "^8.4.2"
-  }
+  },
+  "packageManager": "pnpm@10.33.2"
 }
